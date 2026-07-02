@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanesh Sai Maddukuri | Professional Portfolio</title>
+    <meta name="description" content="Professional portfolio of Dhanesh Sai Maddukuri, a Computer Science & Engineering student at SRM University AP, specializing in Machine Learning, NLP, and Software Testing.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ambient Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>Dhanesh<span class="logo-accent">.dev/&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link btn-contact-nav">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i data-lucide="moon" class="theme-icon moon-icon"></i>
+                    <i data-lucide="sun" class="theme-icon sun-icon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="menu-open"></i>
+                    <i data-lucide="x" class="menu-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge reveal-fade">
+                        <span class="badge-dot"></span>
+                        Open for Internships & Opportunities
+                    </div>
+                    <h1 class="hero-title reveal-slide">
+                        Hi, I'm <span class="gradient-text">Dhanesh Sai</span>
+                    </h1>
+                    <h2 class="hero-subtitle reveal-slide">
+                        I am a <span class="typing-text" id="typing-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-desc reveal-fade">
+                        Computer Science Engineering student at SRM University AP, specializing in Machine Learning, Natural Language Processing, and Software Quality Assurance.
+                    </p>
+                    
+                    <div class="hero-actions reveal-fade">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Let's Talk</span>
+                            <i data-lucide="message-square"></i>
+                        </a>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="social-links reveal-fade">
+                        <a href="https://linkedin.com/in/dhaneshsaimaddukuri" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://github.com/dhanesh0369" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="mailto:maddukuridhaneshsai@gmail.com" class="social-link" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic (Glass card layout representing his fields) -->
+                <div class="hero-graphic reveal-fade">
+                    <div class="graphic-card main-card">
+                        <div class="card-header-decor">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="card-content-decor">
+                            <div class="code-line"><span class="code-keyword">const</span> developer = {</div>
+                            <div class="code-line indent"><span class="code-property">name</span>: <span class="code-string">"Dhanesh Sai Maddukuri"</span>,</div>
+                            <div class="code-line indent"><span class="code-property">role</span>: <span class="code-string">"ML & NLP Developer / QA"</span>,</div>
+                            <div class="code-line indent"><span class="code-property">gpa</span>: <span class="code-number">8.05</span>,</div>
+                            <div class="code-line indent"><span class="code-property">skills</span>: [<span class="code-string">"Python"</span>, <span class="code-string">"Transformers"</span>, <span class="code-string">"QA"</span>],</div>
+                            <div class="code-line"><span class="code-bracket">}</span>;</div>
+                        </div>
+                    </div>
+                    <div class="graphic-card secondary-card float-anim-1">
+                        <div class="badge-icon ml-badge">
+                            <i data-lucide="brain-circuit"></i>
+                        </div>
+                        <div class="badge-info">
+                            <span class="badge-title">Machine Learning</span>
+                            <span class="badge-sub">95.33% F1 score</span>
+                        </div>
+                    </div>
+                    <div class="graphic-card tertiary-card float-anim-2">
+                        <div class="badge-icon qa-badge">
+                            <i data-lucide="check-square"></i>
+                        </div>
+                        <div class="badge-info">
+                            <span class="badge-title">QA & Testing</span>
+                            <span class="badge-sub">320 Hours Cyparta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-header reveal-fade">
+                    <span class="section-subtitle">Introduction</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info reveal-slide">
+                        <p class="about-text-highlight">
+                            I am a third-year B.Tech student in Computer Science and Engineering at SRM University AP, driven by a passion for solving complex computational and software quality challenges.
+                        </p>
+                        <p class="about-text">
+                            With a strong foundation in core computer science subjects (Data Structures, Algorithms, OOP, DBMS), I have developed specialized skills in Machine Learning and Natural Language Processing, building advanced pipelines like contract risk classifiers using Legal-BERT and post-hoc temperature scaling.
+                        </p>
+                        <p class="about-text">
+                            Equally interested in software quality, I have undergone professional training in software testing, mastering test case design, defect tracking, and software validation to ensure robust, high-performing software products.
+                        </p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">8.05</span>
+                                <span class="stat-label">Cumulative GPA</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Core Projects</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Certifications</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">320</span>
+                                <span class="stat-label">Hours QA Training</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card-decor reveal-slide">
+                        <div class="details-card-glass">
+                            <h3>Key Details</h3>
+                            <ul class="details-list">
+                                <li>
+                                    <span class="details-label"><i data-lucide="book-open"></i> Education:</span>
+                                    <span class="details-val">B.Tech in CSE (June 2023 - June 2027)</span>
+                                </li>
+                                <li>
+                                    <span class="details-label"><i data-lucide="school"></i> University:</span>
+                                    <span class="details-val">SRM University AP, Amaravathi</span>
+                                </li>
+                                <li>
+                                    <span class="details-label"><i data-lucide="map-pin"></i> Location:</span>
+                                    <span class="details-val">Andhra Pradesh, India</span>
+                                </li>
+                                <li>
+                                    <span class="details-label"><i data-lucide="mail"></i> Email:</span>
+                                    <span class="details-val"><a href="mailto:maddukuridhaneshsai@gmail.com">maddukuridhaneshsai@gmail.com</a></span>
+                                </li>
+                                <li>
+                                    <span class="details-label"><i data-lucide="phone"></i> Phone:</span>
+                                    <span class="details-val">+91 7780515209</span>
+                                </li>
+                            </ul>
+                            <div class="about-cta-box">
+                                <a href="mailto:maddukuridhaneshsai@gmail.com" class="btn btn-secondary btn-full">
+                                    <i data-lucide="download"></i>
+                                    <span>Request Full Resume PDF</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="section-container">
+                <div class="section-header reveal-fade">
+                    <span class="section-subtitle">My Journey</span>
+                    <h2 class="section-title">Training & Experience</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2025 – Jul 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role">Software Testing Trainee</h3>
+                                <span class="timeline-company"><i data-lucide="building"></i> Cyparta Software House, Egypt</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Completed an intensive 320-hour software testing program, focusing on core QA methodologies, manual and automation frameworks, and validation protocols.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Gained hands-on experience in software testing principles, methodologies, and quality assurance practices.</li>
+                                <li>Designed and executed manual test cases and reported bugs across different stages of the development lifecycle.</li>
+                                <li>Applied testing tools and best practices to improve software reliability and performance.</li>
+                                <li>Collaborated with international developers and cross-functional teams to validate system requirements and ensure product excellence.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Manual Testing</span>
+                                <span class="tag">Test Cases</span>
+                                <span class="tag">Bug Tracking</span>
+                                <span class="tag">QA Methodologies</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 (Education - SRM University) -->
+                    <div class="timeline-item reveal-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2023 – Jun 2027</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role">B.Tech. in Computer Science and Engineering</h3>
+                                <span class="timeline-company"><i data-lucide="graduation-cap"></i> SRM University AP</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Pursuing an undergraduate degree focused on core principles of computation, machine learning theory, systems, and application development.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Current GPA: 8.05/10 (Till 5th Semester).</li>
+                                <li>Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, DBMS, Machine Learning, Operating Systems.</li>
+                                <li>Actively involved in technical clubs, organizing coding workshops, and building dynamic ML/Web pipelines.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Data Structures</span>
+                                <span class="tag">Algorithms</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">DBMS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header reveal-fade">
+                    <span class="section-subtitle">My Works</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <!-- Project Filters -->
+                <div class="project-filters reveal-fade">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning & NLP</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="systems">Other Systems</button>
+                </div>
+                
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 (LexGuard - ML) -->
+                    <div class="project-card reveal-slide" data-category="ml">
+                        <div class="project-img-decor ml-bg">
+                            <i data-lucide="scale"></i>
+                            <div class="project-year">2026</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">LexGuard: Legal Risk Detection</h3>
+                            <p class="project-desc">
+                                A high-performance three-tier NLP inference cascade built to automatically classify, analyze, and grade legal risks in contracts.
+                            </p>
+                            <ul class="project-features">
+                                <li><strong>95.33% Macro-F1:</strong> Built using Legal-BERT, TF-IDF + Logistic Regression, and keyword cascades.</li>
+                                <li><strong>Temperature Scaling (T=1.5):</strong> Calibrated confidence to prevent over-confident neural classifications.</li>
+                                <li><strong>Hybrid Severity Estimator:</strong> Integrated modal verbs, negation detection, and score scaling to label risks as High/Medium/Low.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag-tech">Python</span>
+                                <span class="tag-tech">NLP</span>
+                                <span class="tag-tech">Legal-BERT</span>
+                                <span class="tag-tech">Transformers</span>
+                                <span class="tag-tech">Flask</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-tag-status">Live (Model)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (S&P 500 - ML) -->
+                    <div class="project-card reveal-slide" data-category="ml">
+                        <div class="project-img-decor finance-bg">
+                            <i data-lucide="trending-up"></i>
+                            <div class="project-year">2025</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">S&P 500 Return Predictor</h3>
+                            <p class="project-desc">
+                                A CatBoost-based time-series forecasting model designed to predict S&P 500 excess returns under market volatility limits.
+                            </p>
+                            <ul class="project-features">
+                                <li><strong>Time-Series CV:</strong> Designed robust validation pipelines to prevent leakage over 9,000+ financial records.</li>
+                                <li><strong>Volatility Limits:</strong> Engineered custom indicators tracking volatility and rolling risk thresholds.</li>
+                                <li><strong>Optimized Features:</strong> Extracted technical indices, moving averages, and historical return distributions.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag-tech">Python</span>
+                                <span class="tag-tech">CatBoost</span>
+                                <span class="tag-tech">Time Series</span>
+                                <span class="tag-tech">Scikit-learn</span>
+                                <span class="tag-tech">Pandas</span>
+                            </div>
+                            <!-- No repository link -->
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (CodePlay - Web) -->
+                    <div class="project-card reveal-slide" data-category="web">
+                        <div class="project-img-decor game-bg">
+                            <i data-lucide="gamepad-2"></i>
+                            <div class="project-year">2024</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">CodePlay - Game Builder</h3>
+                            <p class="project-desc">
+                                An interactive, web-based platform that helps kids learn programming logic through coding challenges and modular game building.
+                            </p>
+                            <ul class="project-features">
+                                <li><strong>Interactive UI:</strong> Responsive frontend built with HTML, CSS, and JS for children.</li>
+                                <li><strong>PHP/SQL Backend:</strong> Secure authentication, tutorial progress, and project saves in MySQL.</li>
+                                <li><strong>Guided Challenges:</strong> Structured drag-and-drop code structures translating to real game behaviors.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag-tech">HTML/CSS</span>
+                                <span class="tag-tech">JavaScript</span>
+                                <span class="tag-tech">PHP</span>
+                                <span class="tag-tech">SQL</span>
+                                <span class="tag-tech">DBMS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/dhanesh0369/CodePlay" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <i data-lucide="github"></i> Repo
+                                </a>
+                                <span class="project-tag-status">Active Workspace</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (Inventory System - Systems) -->
+                    <div class="project-card reveal-slide" data-category="systems">
+                        <div class="project-img-decor db-bg">
+                            <i data-lucide="database"></i>
+                            <div class="project-year">2024</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Inventory Management DB</h3>
+                            <p class="project-desc">
+                                A high-integrity database solution with clean relational models managing suppliers, purchases, sales, stock, and audit logs.
+                            </p>
+                            <ul class="project-features">
+                                <li><strong>MySQL Stored Procedures:</strong> Automated heavy transaction operations for rapid inventory shifts.</li>
+                                <li><strong>Atomic Logs:</strong> Triggered logs tracking stock depletion and sales calculations automatically.</li>
+                                <li><strong>Optimized Relations:</strong> 3NF schema, indexes, and custom views for fast lookup.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag-tech">MySQL</span>
+                                <span class="tag-tech">Database Design</span>
+                                <span class="tag-tech">SQL Triggers</span>
+                                <span class="tag-tech">CRUD</span>
+                            </div>
+                            <!-- No repository link -->
+                        </div>
+                    </div>
+
+                    <!-- Project 5 (Car Rental - Systems) -->
+                    <div class="project-card reveal-slide" data-category="systems">
+                        <div class="project-img-decor cpp-bg">
+                            <i data-lucide="car"></i>
+                            <div class="project-year">2024</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Car Rental Console System</h3>
+                            <p class="project-desc">
+                                An object-oriented command-line solution engineered in C++ managing accounts, car logs, pricing, and active rentals.
+                            </p>
+                            <ul class="project-features">
+                                <li><strong>OOP Paradigm:</strong> Implemented inheritance, polymorphism, and encapsulation patterns.</li>
+                                <li><strong>File Persistence:</strong> Designed structural file reading/writing for logs and user authentication.</li>
+                                <li><strong>Automated Calculation:</strong> Real-time pricing models factoring in car tier and rent duration.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag-tech">C++</span>
+                                <span class="tag-tech">OOP</span>
+                                <span class="tag-tech">File Handling</span>
+                                <span class="tag-tech">Structures</span>
+                            </div>
+                            <!-- No repository link -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header reveal-fade">
+                    <span class="section-subtitle">Proficiencies</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    
+                    <!-- Languages -->
+                    <div class="skills-card reveal-slide">
+                        <div class="skills-card-header">
+                            <i data-lucide="code-2" class="skills-icon-lang"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">C++</div>
+                            <div class="skill-tag">Java</div>
+                            <div class="skill-tag">C</div>
+                            <div class="skill-tag">SQL</div>
+                            <div class="skill-tag">PHP</div>
+                        </div>
+                    </div>
+
+                    <!-- ML & Data Science -->
+                    <div class="skills-card reveal-slide">
+                        <div class="skills-card-header">
+                            <i data-lucide="brain-circuit" class="skills-icon-ml"></i>
+                            <h3>Machine Learning & Data</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag">Scikit-learn</div>
+                            <div class="skill-tag">Pandas</div>
+                            <div class="skill-tag">NumPy</div>
+                            <div class="skill-tag">CatBoost</div>
+                            <div class="skill-tag">NLP</div>
+                            <div class="skill-tag">Transformers (Legal-BERT)</div>
+                            <div class="skill-tag">Time Series Analysis</div>
+                        </div>
+                    </div>
+
+                    <!-- Testing & QA -->
+                    <div class="skills-card reveal-slide">
+                        <div class="skills-card-header">
+                            <i data-lucide="check-square" class="skills-icon-test"></i>
+                            <h3>Testing & QA</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag">Manual Testing</div>
+                            <div class="skill-tag">Test Case Design</div>
+                            <div class="skill-tag">Bug Reporting & Tracking</div>
+                            <div class="skill-tag">Software Testing Lifecycle</div>
+                            <div class="skill-tag">QA Methodologies</div>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Tools -->
+                    <div class="skills-card reveal-slide">
+                        <div class="skills-card-header">
+                            <i data-lucide="settings" class="skills-icon-tool"></i>
+                            <h3>Databases & Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag">MySQL</div>
+                            <div class="skill-tag">Git & GitHub</div>
+                            <div class="skill-tag">Figma</div>
+                            <div class="skill-tag">HTML5 & CSS3</div>
+                            <div class="skill-tag">JavaScript & Bootstrap</div>
+                        </div>
+                    </div>
+
+                    <!-- Core CS Concepts -->
+                    <div class="skills-card reveal-slide">
+                        <div class="skills-card-header">
+                            <i data-lucide="layers" class="skills-icon-core"></i>
+                            <h3>Core Computer Science</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag">Data Structures & Algorithms</div>
+                            <div class="skill-tag">Object-Oriented Programming (OOP)</div>
+                            <div class="skill-tag">Database Management Systems</div>
+                            <div class="skill-tag">Software Engineering</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
+            <div class="section-container">
+                <div class="section-header reveal-fade">
+                    <span class="section-subtitle">Credentials</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <div class="certifications-grid">
+                    
+                    <!-- Cert 1 (Cyparta QA) -->
+                    <div class="cert-card reveal-fade">
+                        <div class="cert-icon-decor">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-content">
+                            <span class="cert-issuer">Cyparta Software House</span>
+                            <h3 class="cert-title">Software Testing Program (320 Hours)</h3>
+                            <p class="cert-desc">Intensive training in industry QA workflows, manual and automated validation, and agile test-management. </p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 (Azure AI) -->
+                    <div class="cert-card reveal-fade">
+                        <div class="cert-icon-decor microsoft">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <div class="cert-content">
+                            <span class="cert-issuer">Microsoft</span>
+                            <h3 class="cert-title">Azure AI Fundamentals</h3>
+                            <p class="cert-desc">Validation of cloud machine learning models, computer vision pipelines, conversational AI, and responsible AI practices.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 (Java SE17) -->
+                    <div class="cert-card reveal-fade">
+                        <div class="cert-icon-decor oracle">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <div class="cert-content">
+                            <span class="cert-issuer">Oracle Certified Professional</span>
+                            <h3 class="cert-title">Java SE 17 Developer</h3>
+                            <p class="cert-desc">Verification of professional Java development skills, covering modularization, concurrency, memory profiling, and core libraries.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header reveal-fade">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="title-bar"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-panel reveal-slide">
+                        <h3>Connect with Me</h3>
+                        <p class="contact-sub">Have a project, job opening, or want to collaborate? Reach out to me directly or use the contact form.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Email Me</span>
+                                    <a href="mailto:maddukuridhaneshsai@gmail.com" class="method-link">maddukuridhaneshsai@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Call / WhatsApp</span>
+                                    <a href="tel:+917780515209" class="method-link">+91 7780515209</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-link-text">Amaravathi, Andhra Pradesh, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-footer">
+                            <a href="https://linkedin.com/in/dhaneshsaimaddukuri" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://github.com/dhanesh0369" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card reveal-slide">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-email">Your Email</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-subject">Subject</label>
+                                    <input type="text" id="form-subject" placeholder="Project Collaboration" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-message">Message</label>
+                                    <textarea id="form-message" rows="5" placeholder="Let's build something cool together..." required></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                        <!-- Form Success Message -->
+                        <div class="form-success" id="form-success">
+                            <div class="success-icon">
+                                <i data-lucide="check-circle-2"></i>
+                            </div>
+                            <h3>Message Sent!</h3>
+                            <p>Thank you for reaching out, Dhanesh will contact you shortly.</p>
+                            <button class="btn btn-secondary" id="reset-form-btn">Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#home" class="logo">&lt;Dhanesh<span class="logo-accent">.dev/&gt;</span></a>
+                <p>Building predictive systems and validating software quality with excellence.</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 Dhanesh Sai Maddukuri. All rights reserved.</p>
+                <p class="footer-built">Designed with premium CSS and interactive JS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </a>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
