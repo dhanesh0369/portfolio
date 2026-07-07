@@ -901,7 +901,7 @@ li {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 120px;
+    left: 160px;
     width: 4px;
     background: linear-gradient(180deg, var(--primary), var(--secondary));
     border-radius: 2px;
@@ -911,7 +911,7 @@ li {
     position: relative;
     margin-bottom: 60px;
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 160px 1fr;
     gap: 40px;
 }
 .timeline-item:last-child {
@@ -920,7 +920,7 @@ li {
 
 .timeline-dot {
     position: absolute;
-    left: 114px;
+    left: 154px;
     top: 24px;
     width: 16px;
     height: 16px;
@@ -943,6 +943,7 @@ li {
     font-size: 0.9rem;
     color: var(--text-secondary);
     padding-top: 18px;
+    padding-right: 24px;
 }
 
 .timeline-content {
@@ -1045,6 +1046,7 @@ li {
     .timeline-date {
         text-align: left;
         padding-top: 0;
+        padding-right: 0;
         margin-bottom: -8px;
     }
 }
