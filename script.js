@@ -10,14 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
 
-    // Load theme from localStorage or fallback to system preference
+    // Load theme from localStorage or default to light theme
     const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (savedTheme) {
         htmlElement.setAttribute('data-theme', savedTheme);
     } else {
-        htmlElement.setAttribute('data-theme', systemPrefersDark ? 'dark' : 'light');
+        htmlElement.setAttribute('data-theme', 'light');
     }
 
     themeToggle.addEventListener('click', () => {
