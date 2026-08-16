@@ -229,12 +229,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 lucide.createIcons();
             }
 
-            // Real Web3Forms submission
+            // Real Web3Forms submission using JSON payload
             const formData = new FormData(contactForm);
+            const object = Object.fromEntries(formData);
+            const jsonPayload = JSON.stringify(object);
             
             fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
-                body: formData
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: jsonPayload
             })
             .then(async (response) => {
                 let json = await response.json();
