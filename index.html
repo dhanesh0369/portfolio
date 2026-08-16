@@ -660,28 +660,29 @@
                     <!-- Contact Form Card -->
                     <div class="contact-form-card reveal-slide">
                         <form id="contact-form" class="contact-form">
+                            <input type="hidden" name="access_key" value="737b61c5-09f5-48db-876d-5bfcf21667d2">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="form-name">Your Name</label>
-                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                    <input type="text" id="form-name" name="name" placeholder="John Doe" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="form-email">Your Email</label>
-                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                    <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="form-subject">Subject</label>
-                                    <input type="text" id="form-subject" placeholder="Project Collaboration" required>
+                                    <input type="text" id="form-subject" name="subject" placeholder="Project Collaboration" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="form-message">Message</label>
-                                    <textarea id="form-message" rows="5" placeholder="Let's build something cool together..." required></textarea>
+                                    <textarea id="form-message" name="message" rows="5" placeholder="Let's build something cool together..." required></textarea>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-full" id="submit-btn">

@@ -229,21 +229,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 lucide.createIcons();
             }
 
-            // Simulate form submission network call
-            setTimeout(() => {
-                contactForm.style.display = 'none';
-                formSuccess.style.display = 'block';
+            // Real Web3Forms submission
+            const formData = new FormData(contactForm);
+            
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    contactForm.style.display = 'none';
+                    formSuccess.style.display = 'block';
+                } else {
+                    console.log(response);
+                    alert(json.message || "Something went wrong!");
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                alert("Form submission failed. Please try again.");
+            })
+            .then(() => {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalBtnContent;
-                
-                // Log mock form data for display
-                const name = document.getElementById('form-name').value;
-                const email = document.getElementById('form-email').value;
-                const subject = document.getElementById('form-subject').value;
-                const message = document.getElementById('form-message').value;
-                
-                console.log('Mock email sent successfully:', { name, email, subject, message });
-            }, 1500);
+                if (typeof lucide !== 'undefined') {
+                    lucide.createIcons();
+                }
+            });
         });
     }
 
